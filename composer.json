@@ -1,0 +1,35 @@
+{
+    "name": "shariaty/telegram-crawler",
+    "description": "A package to get data from telegram channels",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.4@dev"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Ala Shariaty",
+            "email": "ala.sharyaty@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shariaty\\TelegramCrawler\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "Shariaty\\TelegramCrawler\\TelegramCrawlerServiceProvider"
+            ],
+            "aliases": {
+                "TelegramCrawler": "Shariaty\\TelegramCrawler\\Facades\\TelegramCrawler"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
