@@ -33,11 +33,16 @@ Publish the config file (see config/telegram.php), you could publish the config 
 ```sh
 php artisan vendor:publish --provider="Shariaty\TelegramCrawler\TelegramCrawlerServiceProvider"
 ```
-And Enjoy!
+> Note: This package requires composer Version 2 to be installed.
+
+Enjoy!
 
 
 ## Usage
-
+Import The facade
+```sh
+use Shariaty\TelegramCrawler\Facades\TelegramCrawler;
+```
 Create an instance using Facade with the name of the channel.
 ```sh
 $channel = TelegramCrawler::load("tahran_sabza");
