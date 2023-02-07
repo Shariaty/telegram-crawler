@@ -45,7 +45,7 @@ use Shariaty\TelegramCrawler\Facades\TelegramCrawler;
 ```
 Create an instance using Facade with the name of the channel.
 ```sh
-$channel = TelegramCrawler::load("tahran_sabza");
+$channel = TelegramCrawler::load("name_of_the_channel");
 ```
 Use any of below methods to retrive data.
 ```sh
